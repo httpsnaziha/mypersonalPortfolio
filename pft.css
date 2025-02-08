@@ -1,0 +1,230 @@
+body{
+   font-family: sans-serif;
+   background-color:#e2e0c8;
+   text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #872341;
+    padding: 10px;
+    box-shadow: rgba(0, 0,0, 0.2);
+}
+.tab {
+    background: #be3144;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    transition: background 0.3s;
+    color:whitesmoke;
+}
+.tab.active {
+    background:#09122c;
+    color:whitesmoke;
+}
+.search-bar {
+    width: 350px;
+    padding: 8px 12px;
+    border: 1px solid;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 20px;
+}
+
+.section {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    margin-top: 50px;
+    width: 1220px;
+}
+.section.active {
+    display: block;
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab {
+        width: 80%;
+        text-align: center;
+    }
+}
+.dots {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right:800px;
+}
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot.red {
+    background-color: #ff5f56;
+}
+
+.dot.yellow {
+    background-color: #ffbd2e;
+}
+
+.dot.green {
+    background-color: #27c93f;
+}
+h1{
+    font-size: 3em;
+    font-weight: 500px;
+}
+
+.skills-section {
+    width: 60%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.skills-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: #444;
+    text-align: left;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.progress{
+    height: 100%;
+    background-color: #09122c;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+h1{
+    font-size: 4em ;
+    font-weight: 800px;
+    text-align: center;
+    
+}
+
+.img{
+    width: 400px;
+    height: 400px;
+    margin-left: 300px;
+}
+h3{
+    font-size: 2em ;
+    font-weight: 600px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.language-skill {
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.skill-bar {
+    background-color: #e0e0e0;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.bar {
+    height: 100%;
+    background-color:#09122c;
+    transition: width 0.5s ease-in-out;
+}
+
+.level {
+    font-size: 16px;
+    color:  #444;
+    text-align: right;
+    margin-top: 5px;
+}
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.contact-card {
+   background: black;
+    padding: 70px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.contact-card h2 {
+    margin-bottom:10px;
+    color: whitesmoke;
+}
+
+.contact-card p {
+    margin-bottom: 20px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.contact-icon {
+    text-align: center;
+}
+
+.contact-icon a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.contact-icon p {
+    margin: 0;
+    font-weight: bold;
+}
