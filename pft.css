@@ -26,15 +26,13 @@ html{
     background:#09122c;
     color:whitesmoke;
 }
-.search-bar {
-    width: 350px;
-    padding: 8px 12px;
-    border: 1px solid;
-    border-radius: 8px;
-    outline: none;
-    margin-top: 20px;
-}
 
+.content{
+    margin: 0;
+    overflow: hidden;
+    max-width: 1220px;
+    font-family: monospace;
+}
 .section {
     display: none;
     background-color: white;
@@ -42,46 +40,66 @@ html{
     margin-top: 50px;
     max-width: 1220px;
 }
+@media (max-width:600px){
+    .navbar{
+        display: flex;
+    }
+    .section{
+       max-width: 300px;
+        overflow: hidden;
+    }
+    img{
+        width: 290px;
+
+    }
+  
+}
 .section.active {
     display: block;
 }
-
-.dots {
+@media(min-width:1000px){
+    .dots {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-right:800px;
-}
-.dot {
+   }
+  .dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-}
+   }
 
-.dot.red {
+  .dot.red {
     background-color: #ff5f56;
-}
+   }
 
-.dot.yellow {
+   .dot.yellow {
     background-color: #ffbd2e;
+   }
+
+  .dot.green {
+    background-color: #27c93f;
+   }
+   
 }
 
-.dot.green {
-    background-color: #27c93f;
-}
 h1{
     font-size: 3em;
     font-weight: 500px;
 }
+.search-bar {
+    width: 350px;
+    padding: 8px 12px;
+    border: 1px solid;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 20px;}
 
-.skills-section {
-    width: 60%;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.skills-section{
     text-align: center;
 }
+
 .skills-section h1 {
     font-size: 28px;
     margin-bottom: 20px;
@@ -122,9 +140,8 @@ h1{
 }
 
 .img{
-    min-width: 400px;
-    min-height: 400px;
-    margin-left: 300px;
+    width: 400px;
+    height: 400px;
 }
 h3{
     font-size: 2em ;
@@ -180,7 +197,7 @@ h2 {
     padding: 70px;
     border-radius: 15px;
     text-align: center;
-    max-width: 300px;
+    width: 300px;
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -211,7 +228,7 @@ h2 {
 
 .icon {
     max-width: 100px;
-    min-height: 100px;
+    height: 100px;
     margin-bottom: 10px;
 }
 
