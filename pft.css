@@ -40,21 +40,12 @@ html{
     background-color: white;
     padding: 20px;
     margin-top: 50px;
-    width: 1220px;
+    max-width: 1220px;
 }
 .section.active {
     display: block;
 }
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-    .tab {
-        width: 80%;
-        text-align: center;
-    }
-}
+
 .dots {
     display: flex;
     align-items: center;
@@ -131,8 +122,8 @@ h1{
 }
 
 .img{
-    width: 400px;
-    height: 400px;
+    min-width: 400px;
+    min-height: 400px;
     margin-left: 300px;
 }
 h3{
@@ -189,7 +180,7 @@ h2 {
     padding: 70px;
     border-radius: 15px;
     text-align: center;
-    width: 300px;
+    max-width: 300px;
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -219,8 +210,8 @@ h2 {
 }
 
 .icon {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    min-height: 100px;
     margin-bottom: 10px;
 }
 
